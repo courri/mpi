@@ -1,18 +1,18 @@
-```
+```python
 
 mpif90 myprog.f90
 mpirun -np 2 ./a.out
 ```
 
 ==============
-```
+```python
 mpif90 myprog.f90 -o kaikai
 mpirun -np 2 ./kaikai
 ```
 
 ==============
 
-```
+```python
 icc/ifort、
 pgcc/pgf90、
 gcc/gfortran
@@ -84,13 +84,13 @@ You probably compile and link your program with a single command, as in
 
 
 Depending on the computer that you are using, you may be able to compile an MPI program with a similar command, which automatically locates the include file and the compiled libraries that you will need. This command is likely to be:
-```
+```python
         mpif90 myprog.f90
 ```      
 Interactive MPI Runs
 
 Some systems allow users to run an MPI program interactively. You do this with the mpirun command:
-```
+```python
 
         mpirun -np 4 a_output.txt
 ```      
