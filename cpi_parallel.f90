@@ -5,6 +5,7 @@ integer,parameter :: N = 1.0e8
 real,parameter :: PI25DT = 3.141592653589793238462643
 real*8 pi,h,psum,local
 integer i
+real,allocatable :: mypi0(:)
 
 h = 1.0/N
 psum = 0.0
