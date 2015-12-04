@@ -26,7 +26,7 @@ print *,'my pi is', mypi, 'in Process', myid
 call mpi_send(mypi,1,MPI_DOUBLE_PRECISION,0,1,comm,ierr)
 
 if(myid .eq. 0) then
-mypi0(1)=mypi
+! mypi0(1)=mypi
 
 do i=1,np
 	call mpi_recv(mypi0(i),1,MPI_DOUBLE_PRECISION,i-1,1,comm,status,ierr)
